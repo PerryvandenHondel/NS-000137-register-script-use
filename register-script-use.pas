@@ -6,38 +6,15 @@
 	DESCRIPTION:
 		Register the use of a script.
 		
-			
-  
 	VERSION:
-		01	2015-04-23	PVDH	Initial version
+		01	2015-04-23	PVDH	Initial version; dirty version; fixed path to export folder.
 
 	RETURNS:
 		Nothing
 	
 	FUNCTIONS AND PROCEDURES:
-		function ConvertFile
-		function GetEventType
-		function GetKeyName
-		function GetKeyType
-		function ProcessThisEvent
-		procedure EventDetailReadConfig
-		procedure EventDetailRecordAdd
-		procedure EventDetailRecordShow
-		procedure EventFoundAdd
-		procedure EventFoundStats
-		procedure EventIncreaseCount
-		procedure EventReadConfig
-		procedure EventRecordAdd
-		procedure EventRecordShow
-		procedure ProcessEvent
-		procedure ProcessLine
-		procedure ProgramDone
-		procedure ProgramInit
-		procedure ProgramRun
-		procedure ProgramTest
-		procedure ProgramTitle
+		function GetYearMonthFs
 		procedure ProgramUsage
-		procedure ShowStatistics
 		
 	
  =====================================================================================================================} 
