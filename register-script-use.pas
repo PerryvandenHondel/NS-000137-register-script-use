@@ -38,6 +38,9 @@ uses
 	USupportLibrary;
 
 	
+const	
+	SHARE_LOG = '\\vm70as006.rec.nsint\000137-LOG\';
+	
 var
 	tfLog: CTextFile;
 	pathLog: string;
@@ -86,9 +89,10 @@ begin
 	begin
 		scriptId := ParamStr(1);
 
-		pathLog := '\\vm70as006.rec.nsint\000137-EXPORT\' + GetYearMonthFs() + '.csv';
+		// Build the path to the log file
+		pathLog := SHARE_LOG + GetYearMonthFs() + '.csv';
 	
-		WriteLn('Writing to: ' + pathLog);
+		WriteLn('Register the use of script ', scriptId, ' in log file ', pathLog);
 			
 		tfLog := CTextFile.Create(pathLog);
 		tfLog.OpenFileWrite();	
